@@ -126,12 +126,40 @@
         <!---------------------------- Awareness Section !----------------------------------->
 
         <div class='spacer'></div>
-        <section class='awareness sections'></section>
+        <section class='awareness sections'>
+            <div class='awarenessTxtColumn'>
+                <h2 class='awarenessTitle'>Spread awareness</h2>
+                <p class='awarenessDesc'>We work with local communities to promote <br/>
+                    awareness and the dangers of the novel coronavirus.</p>
+            </div>
+            <div class='foundersRow'>
+                <div class='foundersColumn'>
+                    <img src='./assets/graphics/viet.png'>
+                    <p class='foundersName'>Viet Nam</p>
+                    <p class='foundersTitle'>Co-Founder</p>
+                </div>
+                <div class='foundersColumn mLeft'>
+                    <img src='./assets/graphics/bustin.png'>
+                    <p class='foundersName'>Bustin Jieber</p>
+                    <p class='foundersTitle'>Co-Founder</p>
+                </div>
+            </div>
+        </section>
 
         <!---------------------------- Footer Section !----------------------------------->
 
         <div class='spacer'></div>
-        <section class='footer sections'></section>
+        <section class='footer sections'>
+            <div class='footerTextCont'>
+            <h2 class='footerHeader'>Want to talk to us?</h2>
+            <p class='footerDesc'>Send us your email and we’ll get back to you.</p>
+            </div>
+            <div class='footerRow'>
+            <input type='text' placeholder='lebronjames@gmail.com' class='footerInput'>
+            <input type='submit' class='footerSubmit'>
+            </div>
+            <h1 class='footerTitle'>Corona-chan</h1>
+        </section>
         </div>
     </body>
     <script src="app.js" async defer></script>

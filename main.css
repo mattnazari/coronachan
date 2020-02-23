@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  color: #111111;
 }
 
 @font-face {
@@ -15,9 +16,23 @@
   src: url(./assets/fonts/CircularStd-Black.ttf);
 }
 
+@font-face {
+  font-family: circularStd-book;
+  src: url(./assets/fonts/CircularStd-Book.ttf);
+}
+
+@font-face {
+  font-family: circularStd-bold;
+  src: url(./assets/fonts/CircularStd-Bold.ttf);
+}
+
 a{
   text-decoration: none;
-  color: #111111;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover{
+  color:#8856FF
 }
 
 .wrapper{
@@ -57,7 +72,6 @@ a{
 .logo{
   font-family: circularStd-black;
   font-size: 32px;
-  color: #111111;
 }
 
 .spacer{
@@ -66,12 +80,12 @@ a{
 
 /********************************************** post Section **********/
 
+/********************************************** Section Texts Style **********/
+
 .sections{
   width:100vw;
   height: 100vh;
 }
-
-/********************************************** Section Texts Style **********/
 
 .list{
   display: flex;
@@ -155,4 +169,134 @@ a{
 
 /********************************************** Awareness Section **********/
 
+.awareness{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 800px;
+}
+
+.awarenessTxtColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foundersRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.mLeft{
+  margin-left: 50px;
+}
+
+.foundersColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.awarenessTitle{
+  font-family: circularStd-black;
+  font-size: 108px;
+  letter-spacing: -5.19px;
+}
+
+.awarenessDesc{
+  text-align: center;
+  font-family: circularStd-medium;
+  font-size: 24px;
+}
+
+.foundersName{
+  font-family: circularStd-black;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.foundersTitle{
+  color: #9F9F9F;
+  font-family: circularStd-medium;
+  font-size: 12px;
+}
+
 /********************************************** Footer Section **********/
+
+.footer{
+  height: 700px;
+  width: 100vw;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px 100px 0 100px;
+}
+
+.footerHeader{
+  font-family: circularStd-black;
+  font-size: 48px;
+  color: white;
+}
+
+.footerDesc{
+  font-family: circularStd-book;
+  color:white;
+  font-size: 24px;
+}
+
+.footerTitle{
+  font-family: circularStd-bold;
+  color: white;
+  opacity: 5%;
+  font-size: 188px;
+  letter-spacing: -9.61px;
+}
+
+.footerTextCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerInput{
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  width: 396px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.footerSubmit{
+  border: none;
+  height: 40px;
+  width:164px;
+  font-family: circularStd-bold;
+  border-radius: 10px;
+  background-color: #8856FF;
+  font-size: 18px;
+  color: white;
+  letter-spacing: -0.6px;
+  margin-left: 20px;
+}
+
+.footerSubmit:hover{
+  background-color: rgb(97, 30, 255);
+  cursor: pointer;
+}
