@@ -37,6 +37,7 @@ a{
   box-sizing: border-box;
   padding: 30px;
   position: fixed;
+  background-color: white;
 }
 
 .headerItems{
@@ -63,9 +64,69 @@ a{
   height: 100px;
 }
 
-/********************************************** Section 1 ***********************/
+/********************************************** post Section **********/
 
 .sections{
   width:100vw;
   height: 100vh;
 }
+
+/********************************************** Section Texts Style **********/
+
+.list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.listRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bold{
+  font-family: circularStd-black;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.listTxt{
+  font-family: circularStd-medium;
+  font-size: 18px;
+}
+
+.nums{
+  margin-right: 10px;
+}
+
+.sectionHeading{
+  font-family: circularStd-black;
+  font-size: 108px;
+  letter-spacing: -5.19px;
+}
+
+.sectionTitle{
+  font-family: circularStd-black;
+  font-size: 16px;
+}
+
+.leftTxtCont{
+  margin-left: 50px;
+}
+
+/********************************************** Causes Section **********/
+
+.causesCont{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.causesImg{
+  width: 704px;
+  height: 546px;
+  background-image: url('./assets/graphics/causesImg.png');
+}
+
