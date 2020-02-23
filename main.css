@@ -2,4 +2,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: circularStd-medium;
+  src: url(./assets/fonts/CircularStd-Medium.ttf);
+}
+
+@font-face {
+  font-family: circularStd-black;
+  src: url(./assets/fonts/CircularStd-Black.ttf);
+}
+
+a{
+  text-decoration: none;
+  color: #111111;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+/********************************************** Header ***********************/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 30px;
+  position: fixed;
+}
+
+.headerItems{
+  list-style: none;
+  font-family: circularStd-medium;
+  font-size: 16px;
+}
+
+.headerItemContainer{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-family: circularStd-black;
+  font-size: 32px;
+  color: #111111;
+}
+
+.spacer{
+  height: 100px;
+}
+
+/********************************************** Section 1 ***********************/
+
+.sections{
+  width:100vw;
+  height: 100vh;
 }
