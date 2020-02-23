@@ -116,17 +116,43 @@ a{
   margin-left: 50px;
 }
 
-/********************************************** Causes Section **********/
+.rightTxtCont{
+  margin-right: 150px;
+}
 
-.causesCont{
+.sectionCont{
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: center;
 }
 
-.causesImg{
+.sectionContRight{
+  justify-content: flex-end;
+}
+
+.sectionImg{
   width: 704px;
   height: 546px;
+}
+
+/********************************************** Causes Section **********/
+
+.causesImg{
   background-image: url('./assets/graphics/causesImg.png');
 }
 
+/********************************************** Prevention Section **********/
+
+.preventionImg{
+  background-image: url('./assets/graphics/preventionImg.png');
+}
+
+/********************************************** Symptoms Section **********/
+
+.symptomsImg{
+  background-image: url('./assets/graphics/symptomsImg.png');
+}
+
+/********************************************** Awareness Section **********/
+
+/********************************************** Footer Section **********/
