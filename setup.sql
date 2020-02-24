@@ -20,3 +20,6 @@ VALUE ('admin', 'Post number 2', 'Another post that is not going to get read.', 
 
 INSERT INTO posts (username, post_title, post_content, post_image)
 VALUE ('admin', 'Another one', 'This is a sick post brah.', 'https://i.imgur.com/1t6Vkct.jpg');
+
+INSERT INTO users (username, password)
+VALUE ('admin', 'pass');
