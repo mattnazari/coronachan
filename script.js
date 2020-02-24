@@ -14,7 +14,6 @@ function fetchAllPosts() {
 
 fetchAllPosts()
 
-
 let num = 0;
 
 function displayPost() {
@@ -51,3 +50,25 @@ next.addEventListener('click', () => {
   num++
   fetchAllPosts()
 })
+
+let del = document.getElementsByClassName('delete');
+
+function deletePost() {
+  let title = document.querySelector('.postTitle').innerHTML;
+
+  console.log(title)
+
+  axios({
+    method: 'post',
+    url: 'delete_post.php',
+    data: {
+      title: title
+    }
+  })
+    .then(function (response) {
+      console.log(response)
+      console.log(response.config)
+
+      location.reload();
+    })
+}

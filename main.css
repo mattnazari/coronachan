@@ -107,6 +107,20 @@ a:hover{
   flex-direction: column;
 }
 
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: #ff2929;
+  border-radius: 10px;
+}
+
+.delete p {
+  color: white;
+}
+
 
 /********************************************** Section Texts Style **********/
 
