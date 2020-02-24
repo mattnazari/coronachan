@@ -1,9 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   color: #111111;
+}
+
+p {
+  font-family: circularStd-book;
+  letter-spacing: -0.4px;
+}
+
+h2 {
+  padding: 4px;
 }
 
 @font-face {
@@ -78,13 +91,28 @@ a:hover{
   height: 100px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /********************************************** post Section **********/
+
+.postSection {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /********************************************** Section Texts Style **********/
 
 .sections{
   width:100vw;
-  height: 100vh;
+  height: 77vh;
 }
 
 .list{
@@ -127,22 +155,21 @@ a:hover{
 }
 
 .leftTxtCont{
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .rightTxtCont{
-  margin-right: 150px;
+  margin-left: 50px;
 }
 
 .sectionCont{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
-.sectionContRight{
-  justify-content: flex-end;
-}
+
 
 .sectionImg{
   width: 704px;
@@ -294,6 +321,7 @@ a:hover{
   color: white;
   letter-spacing: -0.6px;
   margin-left: 20px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .footerSubmit:hover{
