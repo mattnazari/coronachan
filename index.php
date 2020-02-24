@@ -46,9 +46,13 @@ session_start();
             </div>
             <div class='row'>
                 <h2 class='postTitle'></h2>
-                <div class='delete' onclick='deletePost()'>
-                    <p>Delete</p>
-                </div>
+                <?php
+                if (isset($_SESSION['username'])) {
+                    echo '<div class="delete" onclick="deletePost()"><p>Delete</p></div>';
+                } else {
+                    echo '';
+                }
+                ?>
             </div>
             <div>
                 <p class='postContent'></p>
@@ -190,7 +194,7 @@ session_start();
         <h1 class='footerTitle'>Corona-chan</h1>
     </section>
 
-    <!-- The Modal -->
+    <!-- sign in modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -207,9 +211,29 @@ session_start();
         </div>
 
     </div>
+
+    <!-- create post modal -->
+    <div id="create-post-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id='create-close' class="close">&times;</span>
+            <h1>Create a new post</h1>
+            <form id='create-post-form' class='form'>
+                <p>Post title</p>
+                <input id='post-title' class='post-title' type="text" name='post-title'>
+                <p>Image URL</p>
+                <input id='image-url' class='image-url' type="text" name='image-url'>
+                <p>Post content</p>
+                <input id='post-content' class='post-content' type='textarea' name='post-content'>
+            </form>
+            <a href="#!" id='create-post-button'>Create Post</a>
+        </div>
+
+    </div>
     </div>
 </body>
 <script src="app.js" async defer></script>
-<script src="script.js"></script>
+<script src="script.js" async defer></script>
 
 </html>
