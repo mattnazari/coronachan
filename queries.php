@@ -13,3 +13,11 @@ function deletePost($title) {
   WHERE post_title = '$title'
   ";
 }
+
+function loginUser($username) {
+  return "
+  SELECT *
+  FROM users
+  WHERE username = '$username'
+  ";
+}
