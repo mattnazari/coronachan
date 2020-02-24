@@ -15,10 +15,10 @@
         <header class='header'>
         <h1 class=logo><a href='#'>Corona-chan</a></h1>
         <ul class='headerItemContainer'>
-        <li class='headerItems'><a href='#'>Causes</a></li>
-        <li class='headerItems'><a href='#'>Prevention</a></li>
-        <li class='headerItems'><a href='#'>Symptoms</a></li>
-        <li class='headerItems'><a href='#'>Contact</a></li>
+        <li class='headerItems'><a href='#causes'>Causes</a></li>
+        <li class='headerItems'><a href='#prevention'>Prevention</a></li>
+        <li class='headerItems'><a href='#symptoms'>Symptoms</a></li>
+        <li class='headerItems'><a href='#contact'>Contact</a></li>
         <li class='headerItems'><a href='#'>Sign In</a></li>
         </ul>
         </header>
@@ -30,7 +30,7 @@
 
         <!---------------------------- Causes Section !----------------------------------->
 
-        <div class='spacer'></div>
+        <div class='spacer' id='causes'></div>
         <section class='causes sections'>
             <div class='sectionCont'>
                 <div class='causesImg sectionImg'></div>
@@ -60,7 +60,7 @@
 
         <!---------------------------- Prevention Section !----------------------------------->
 
-        <div class='spacer'></div>
+        <div class='spacer' id='prevention'></div>
         <section class='prevention sections'>
         <div class='sectionCont sectionContRight'>
                 <div class='rightTxtCont'>
@@ -95,7 +95,7 @@
 
         <!---------------------------- Symptoms Section !----------------------------------->
         
-        <div class='spacer'></div>
+        <div class='spacer' id='symptoms'></div>
         <section class='symptoms sections'>
         <div class='sectionCont'>
                 <div class='symptomsImg sectionImg'></div>
@@ -148,7 +148,7 @@
 
         <!---------------------------- Footer Section !----------------------------------->
 
-        <div class='spacer'></div>
+        <div class='spacer' id='contact'></div>
         <section class='footer sections'>
             <div class='footerTextCont'>
             <h2 class='footerHeader'>Want to talk to us?</h2>
