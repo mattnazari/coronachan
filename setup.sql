@@ -16,4 +16,7 @@ CREATE TABLE posts (
 );
 
 INSERT INTO posts (username, post_title, post_content, post_image)
-VALUE ('niga', 'This is a totally new post', 'This is a sentence of the post content', 'https://i.imgur.com/1t6Vkct.jpg');
+VALUE ('admin', 'Post number 2', 'Another post that is not going to get read.', 'https://i.imgur.com/zRszFnI.jpg');
+
+INSERT INTO posts (username, post_title, post_content, post_image)
+VALUE ('admin', 'Another one', 'This is a sick post brah.', 'https://i.imgur.com/1t6Vkct.jpg');

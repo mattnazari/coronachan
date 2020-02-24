@@ -32,13 +32,19 @@
         <section class='postSection sections'>
             <div class='row'>
                 <h1 id='back'>-</h1>
-                <img height='600' class='postImg'></img>
+                <img height='400' class='postImg'></img>
                 <h1 id='next'>+</h1>
             </div>
-            <div>
+            <div class='row'>
                 <h2 class='postTitle'></h2>
+                <div class='delete' onclick='deletePost()'>
+                    <p>Delete</p>
+                </div>
+            </div>
+            <div>
                 <p class='postContent'></p>
                 <p class='author'></p>
+            </div>
             </div>
         </section>
 
