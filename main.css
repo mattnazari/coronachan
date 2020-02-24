@@ -10,6 +10,11 @@ html {
   color: #111111;
 }
 
+p {
+  font-family: circularStd-book;
+  letter-spacing: -0.4px;
+}
+
 h2 {
   padding: 4px;
 }
@@ -86,7 +91,22 @@ a:hover{
   height: 100px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /********************************************** post Section **********/
+
+.postSection {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /********************************************** Section Texts Style **********/
 
