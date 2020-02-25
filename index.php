@@ -19,12 +19,13 @@ session_start();
         <!---------------------------- Header !----------------------------------->
 
         <header class='header'>
-            <h1 class=logo><a href='#'>Corona-chan</a></h1>
+            <h1 class=logo><a href='#' class='hovPurp'>Corona-chan</a></h1>
             <ul class='headerItemContainer'>
-                <li class='headerItems'><a href='#causes'>Causes</a></li>
-                <li class='headerItems'><a href='#prevention'>Prevention</a></li>
-                <li class='headerItems'><a href='#symptoms'>Symptoms</a></li>
-                <li class='headerItems'><a href='#contact'>Contact</a></li>
+                <li class='headerItems'><a href='#causes' class='hovPurp'>Causes</a></li>
+                <li class='headerItems'><a href='#prevention' class='hovPurp'>Prevention</a></li>
+                <li class='headerItems'><a href='#symptoms' class='hovPurp'>Symptoms</a></li>
+                <li class='headerItems'><a href='#awareness' class='hovPurp'>Awareness</a></li>
+                <li class='headerItems'><a href='#contact' class='hovPurp'>Contact</a></li>
                 <?php
                 if (isset($_SESSION['username'])) {
                     echo '<li class="headerItems" id="create-post"><a href="#">Create Post</a></li>';
@@ -67,6 +68,7 @@ session_start();
     <section class='causes sections'>
         <div class='sectionCont'>
             <div class='causesImg sectionImg'></div>
+            <div class='leftCont'>
             <div class='leftTxtCont'>
                 <p class='sectionTitle'>CAUSES</p>
                 <h2 class='sectionHeading'>How does<br />it spread?</h2>
@@ -88,6 +90,7 @@ session_start();
                     </div>
                 </ul>
             </div>
+            </div>
         </div>
     </section>
 
@@ -96,6 +99,7 @@ session_start();
     <div class='spacer' id='prevention'></div>
     <section class='prevention sections'>
         <div class='sectionCont sectionContRight'>
+        <div class='rightCont'>
             <div class='rightTxtCont'>
                 <p class='sectionTitle'>PREVENTION</p>
                 <h2 class='sectionHeading'>Stay clean,<br />be safe.</h2>
@@ -122,6 +126,7 @@ session_start();
                     </div>
                 </ul>
             </div>
+            </div>
             <div class='preventionImg sectionImg'></div>
         </div>
     </section>
@@ -132,6 +137,7 @@ session_start();
     <section class='symptoms sections'>
         <div class='sectionCont'>
             <div class='symptomsImg sectionImg'></div>
+            <div class='leftCont'>
             <div class='leftTxtCont'>
                 <p class='sectionTitle'>SYMPTOMS</p>
                 <h2 class='sectionHeading'>How to know<br />if you have it.</h2>
@@ -152,6 +158,7 @@ session_start();
                         <li class='listTxt'>of breath.</li>
                     </div>
                 </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -159,7 +166,7 @@ session_start();
     <!---------------------------- Awareness Section !----------------------------------->
 
     <div class='spacer'></div>
-    <section class='awareness sections'>
+    <section class='awareness sections' id='awareness'>
         <div class='awarenessTxtColumn'>
             <h2 class='awarenessTitle'>Spread awareness</h2>
             <p class='awarenessDesc'>We work with local communities to promote <br />
@@ -196,20 +203,22 @@ session_start();
 
     <!-- sign in modal -->
     <div id="myModal" class="modal">
-
+        <div class='modalFlex'>
         <!-- Modal content -->
         <div class="modal-content">
+            <div class='modalRow'>
+            <h2 class='signInTitle'>Sign in to Corona-chan</h2>
             <span class="close">&times;</span>
-            <h1>Sign in to Corona-chan</h1>
+            </div>
             <form id='sign-in-form' class='form'>
-                <p>Username or Email Address</p>
-                <input id='username' class='username' type="text" name='username'>
-                <p>Password</p>
-                <input id='password' class='password' type="password" name='password'>
+                <p class='inpTitle'>Username or Email Address</p>
+                <input id='username' class='username signInInp' type="text" name='username' placeholder='username'>
+                <p class='inpTitle'>Password</p>
+                <input id='password' class='password signInInp' type="password" name='password' placeholder='*********'>
             </form>
-            <a href="#!" id='sign-in-button'>Sign In</a>
+            <a href="#!" id='sign-in-button' class='signInButt'>Sign In</a>
         </div>
-
+        </div>
     </div>
 
     <!-- create post modal -->
