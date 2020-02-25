@@ -360,7 +360,7 @@ a{
   cursor: pointer;
 }
 
-/*************************************************** The Modal Sign In */
+/*************************************************** Sign In Modal */
 .modal {
   display: none;
   position: fixed;
@@ -414,7 +414,7 @@ a{
   overflow: hidden;
 }
 
-.signInTitle{
+.formTitle{
   font-family: circularStd-black;
   font-size: 28pt;
 }
@@ -440,30 +440,49 @@ a{
   padding: 20px 0 20px 0;
 }
 
-.signInButt{
+.inpButt{
   width: 200px;
-  height: 30px;
+  height: 35px;
   background-color: #8856FF;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: circularStd-bold;
-  font-size: 8pt;
+  font-size: 14px;
   border-radius: 7px;
 }
 
-.signInButt:hover{
+.inpButt:hover{
   color: white;
   font-family: circularStd-bold;
   background-color: rgb(97, 30, 255);
 }
 
-.signInInp{
+.formInp{
   border: none;
   border-radius: 10px;
   background-color: rgba(183, 183, 183, 0.20);
   max-width: 413px;
   height: 35px;
   padding:10px;
+}
+
+/*************************************************** Create Post Modal */
+
+.CPModal{
+  height: 700px;
+  width: 600px;
+}
+
+.post-content{
+  width: 100%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(183, 183, 183, 0.20);
+}
+
+.CPForm{
+  height: 80%;
 }
