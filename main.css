@@ -15,10 +15,6 @@ p {
   letter-spacing: -0.4px;
 }
 
-h2 {
-  padding: 4px;
-}
-
 @font-face {
   font-family: circularStd-medium;
   src: url(./assets/fonts/CircularStd-Medium.ttf);
@@ -106,23 +102,90 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 500px;
+  margin-top: 20px;
 }
 
 .delete {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
   padding: 10px 30px;
   background-color: #ff2929;
   border-radius: 10px;
+  margin-top: 5px;
 }
 
 .delete p {
   color: white;
 }
 
+.delete:hover{
+  background-color: #8b1818;
+  cursor: pointer;
+}
+
+.left{
+  margin-right: 30px;
+  background-image: url('assets/graphics/leftArrow.svg');
+  width: 32px;
+  height: 41px;
+  transition: 0.2s ease-in-out;
+}
+
+.left:hover{
+  background-image: url('assets/graphics/purpLArrow.svg');
+}
+
+.right{
+  margin-left: 30px;
+  background-image: url('assets/graphics/rightArrow.svg');
+  width: 32px;
+  height: 41px;
+  transition: 0.2s ease-in-out;
+}
+
+.right:hover{
+  background-image: url('assets/graphics/purpRArrow.svg');
+}
+
+.arrows:hover{
+  cursor: pointer;
+}
+
+.postTitle{
+  font-family: circularStd-black;
+  font-size: 46px;
+  margin-left: 61px;
+}
+
+.author{
+  font-family: circularStd-bold;
+  font-size: 16px;
+  color: #8856FF;
+}
+
+.postContent{
+  font-family: circularStd-book;
+  font-size: 18px;
+  max-width: 600px;
+  margin-left: 61px;
+}
+
+.postColumn{
+  margin-left: 20px;
+}
+
+.postAlign{
+  display: flex;
+  flex-direction: column;
+}
+
+.contRow{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 61px;
+  margin-top: 20px;
+}
 
 /********************************************** Section Texts Style **********/
 
