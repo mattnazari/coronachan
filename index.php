@@ -39,14 +39,17 @@ session_start();
         <!---------------------------- Post Section !----------------------------------->
 
         <div class='spacer'></div>
-        <section class='postSection sections'>
+        <section class='postSection'>
+        <div class='postAlign'>
             <div class='row'>
-                <h1 id='back'>-</h1>
+                <div id='back' class='arrows left'></div>
                 <img height='400' class='postImg'></img>
-                <h1 id='next'>+</h1>
+                <div id='next' class='arrows right'></div>
             </div>
-            <div class='row'>
+            <div class='row contRow'>
                 <h2 class='postTitle'></h2>
+                <div class='postColumn'>
+                <p class='author'></p>
                 <?php
                 if (isset($_SESSION['username'])) {
                     echo '<div class="delete" onclick="deletePost()"><p>Delete</p></div>';
@@ -54,11 +57,12 @@ session_start();
                     echo '';
                 }
                 ?>
+                </div>
             </div>
             <div>
                 <p class='postContent'></p>
-                <p class='author'></p>
             </div>
+    </div>
     </div>
     </section>
 
