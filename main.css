@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x:hidden;
   color: #111111;
 }
 
@@ -40,12 +40,8 @@ h2 {
 }
 
 a{
-  text-decoration: none;
   transition: 0.2s ease-in-out;
-}
-
-a:hover{
-  color:#8856FF
+  text-decoration: none;
 }
 
 .wrapper{
@@ -66,6 +62,7 @@ a:hover{
   padding: 30px;
   position: fixed;
   background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
 }
 
 .headerItems{
@@ -95,6 +92,11 @@ a:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
+}
+
+.hovPurp:hover{
+  color:#8856FF
 }
 
 /********************************************** post Section **********/
@@ -102,9 +104,9 @@ a:hover{
 .postSection {
   display: flex;
   justify-content: center;
-  padding: 60px;
   align-items: center;
   flex-direction: column;
+  min-height: 500px;
 }
 
 .delete {
@@ -169,11 +171,25 @@ a:hover{
 }
 
 .leftTxtCont{
-  margin-right: 50px;
+  max-width: 650px;
+}
+
+.leftCont{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rightTxtCont{
-  margin-left: 50px;
+  max-width: 650px;
+}
+
+.rightCont{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionCont{
@@ -216,7 +232,8 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 800px;
+  padding-top: 80px;
+  min-height: 800px;
 }
 
 .awarenessTxtColumn{
@@ -343,40 +360,129 @@ a:hover{
   cursor: pointer;
 }
 
-/* The Modal (background) */
+/*************************************************** Sign In Modal */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  overflow: hidden;
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 15% auto;
+  box-sizing: border-box;
+  padding: 50px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 700px;
+  height: 400px;
+  border-radius: 36px;
+  box-shadow: 0px 12px 50px 0px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  transition: 0.2s ease-in-out;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #8856FF;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modalFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.formTitle{
+  font-family: circularStd-black;
+  font-size: 28pt;
+}
+
+.inpTitle{
+  font-family: circularStd-medium;
+  font-size: 10pt;
+}
+
+.modalRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
+}
+
+.inpButt{
+  width: 200px;
+  height: 35px;
+  background-color: #8856FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: circularStd-bold;
+  font-size: 14px;
+  border-radius: 7px;
+}
+
+.inpButt:hover{
+  color: white;
+  font-family: circularStd-bold;
+  background-color: rgb(97, 30, 255);
+}
+
+.formInp{
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(183, 183, 183, 0.20);
+  max-width: 413px;
+  height: 35px;
+  padding:10px;
+}
+
+/*************************************************** Create Post Modal */
+
+.CPModal{
+  height: 700px;
+  width: 600px;
+}
+
+.post-content{
+  width: 100%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(183, 183, 183, 0.20);
+}
+
+.CPForm{
+  height: 80%;
 }
