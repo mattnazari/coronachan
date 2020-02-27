@@ -18,7 +18,7 @@ session_start();
 
         <!---------------------------- Header !----------------------------------->
 
-        <header class='header'>
+        <header class='header shadow'>
             <h1 class=logo><a href='#' class='hovPurp'>Corona-chan</a></h1>
             <ul class='headerItemContainer'>
                 <li class='headerItems'><a href='#causes' class='hovPurp'>Causes</a></li>
@@ -41,7 +41,7 @@ session_start();
         <div class='spacer'></div>
         <section class='postSection'>
         <div class='postAlign'>
-            <div class='row'>
+            <div class='row between'>
                 <div id='back' class='arrows left'></div>
                 <img height='400' class='postImg'></img>
                 <div id='next' class='arrows right'></div>
