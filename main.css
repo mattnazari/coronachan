@@ -121,6 +121,7 @@ html:not([data-scroll='0']) .header {
   background-color: #ff2929;
   border-radius: 10px;
   margin-top: 5px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .delete p {
@@ -128,7 +129,7 @@ html:not([data-scroll='0']) .header {
 }
 
 .delete:hover{
-  background-color: #8b1818;
+  background-color: #c21919;
   cursor: pointer;
 }
 
@@ -173,14 +174,18 @@ html:not([data-scroll='0']) .header {
 }
 
 .postContent{
+  margin-top: 2vmin;
   font-family: circularStd-book;
   font-size: 18px;
-  max-width: 600px;
+  width: 700px;
+  max-width: 90%;
   margin-left: 61px;
 }
 
 .postColumn{
+  min-width: 150px;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .postAlign{
@@ -194,6 +199,7 @@ html:not([data-scroll='0']) .header {
 .contRow{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-right: 61px;
   margin-top: 20px;
 }
